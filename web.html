@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>建议网页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 8px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>建议网页</h1>
+    </header>
+    <main>
+        <form id="suggestionForm">
+            <label for="name">您的姓名：</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">您的邮箱：</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="suggestion">您的建议：</label>
+            <textarea id="suggestion" name="suggestion" rows="4" required></textarea>
+
+            <button type="button" onclick="submitSuggestion()">提交建议</button>
+        </form>
+    </main>
+
+    <script>
+        function submitSuggestion() {
+            // 这里可以添加JavaScript代码，处理表单提交逻辑
+            alert('建议已提交！');
+        }
+    </script>
+</body>
+</html>
